@@ -109,6 +109,7 @@ li.tab {
 }
 
 .footer-nav {
+  z-index: 5001;
   bottom: 0;
   position: sticky;
   width: -webkit-fill-available;
