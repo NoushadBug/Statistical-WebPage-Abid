@@ -1,0 +1,144 @@
+@media only screen and (max-width: 768px) {
+
+  /* Set the background color of the body and navbar to white */
+  body,
+  nav {
+    background-color: white !important;
+  }
+}
+
+.tabs {
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabs .tab a {
+  color: #0000004f;
+  font-weight: 600;
+}
+
+.select-dropdown{
+  border: none !important;
+  font-size: 1.4rem !important;
+  font-weight: bold;
+}
+
+#statements-wrapper, #overview-wrapper, #engagement-wrapper{
+  min-height: 300px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: .45rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 27, 27, .4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+.sticky-div {
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+}
+.sticky-div *{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.scrollable-container {
+  height: 100%;
+  overflow: auto;
+}
+
+/*Black color to the text*/
+ul.tabs {
+  display : flex;
+  overflow-x: hidden;
+}
+
+/* Style the scrollbar thumb on hover */
+ul.tabs ::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change the color on hover */
+  width: 0.2px;
+  height: 0.2px;
+}
+
+/* Style the scrollbar corner */
+ul.tabs ::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+li.tab {
+ flex-basis : 33.33%;
+}
+
+.tabs .tab a:hover {
+  background-color: #eee;
+  color: #000;
+}
+.tabs .tab a.active {
+  background-color: #88888870;
+  color: #000;
+}
+.tabs .indicator {
+  background-color: #000;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+  color: black;
+  font-weight: 500;
+}
+
+
+.footer-nav img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-nav button:not(.profile-btn) {
+  filter: brightness(0.5);
+}
+
+.footer-nav {
+  bottom: 0;
+  position: sticky;
+  width: -webkit-fill-available;
+  border-top: 0.1px solid rgb(0 0 0 / 18%);
+  background-color: white;
+
+}
+
+.footer-nav .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.items{
+  display: flex;
+  justify-content:space-evenly ;
+  padding: 40px;
+}
+
+
+.btn-items button{
+  text-transform: capitalize;
+  border-radius: 25px;
+  box-shadow: none;
+}
+.btn-items button:hover,
+.btn-items button:active,
+.btn-items button:focus, 
+.btn-items button::after {
+  background: #BBDEFB !important;
+  box-shadow: none !important;
+}

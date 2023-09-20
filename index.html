@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats - Dashboard</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="shortcut icon" href="https://prepinsta.com/wp-content/uploads/2022/01/stats.webp" type="image/x-icon">
+  <link rel="stylesheet" href="styles/essentials.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- Compiled and minified CSS -->
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <div class="navbar-fixed">
+      <nav class="navbar white">
+        <div class="nav-wrapper container valign-wrapper">
+          <ul id="nav-mobile" class="valign-wrapper">
+            <li class="valign-wrapper px-1"><img class="w-70" src="/icon/Arrow_icon.svg" alt="" srcset=""></li>
+            <li class="valign-wrapper px-1">
+              <h6 class="black-text my-0 uppercase font-weight-bold" href="#0">statistics</h6>
+            </li>
+          </ul>
+          <a href="#" class="brand-logo right"><img src="/icon/question_icon.svg" alt="" srcset=""></a>
+        </div>
+        <div class="row">
+          <div class="col px-0 s12 tab-container ">
+            <ul class="tabs">
+              <li class="tab col s3 uppercase"><a class=" " href="#statements-wrapper">statements</a></li>
+              <li class="tab col s3 uppercase"><a class="active" href="#overview-wrapper">overview</a></li>
+              <li class="tab col s3 uppercase"><a class="" href="#engagement-wrapper">engagement</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="row my-0">
+      <div class="col px-0 s12 tab-container ">
+        <ul class="tabs">
+          <li class="tab col s3 uppercase"><a class=" " href="#statements-wrapper">statements</a></li>
+          <li class="tab col s3 uppercase"><a class="active" href="#overview-wrapper">overview</a></li>
+          <li class="tab col s3 uppercase"><a class="" href="#engagement-wrapper">engagement</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row inner-contents mb-0">
+      <div id="statements-wrapper" class="tab-cont-wrapper px-3 cyan lighten-5"  style="height: 5000px;">
+      </div>
+      <div id="overview-wrapper" class="tab-cont-wrapper px-3 cyan lighten-5">
+
+        <div class="btn-items card box-shadow-0 py-3 my-0">
+          <div class="row center-align container my-3">
+            <div class="col s12 m4">
+              <button id="earnings-btn"
+                class="truncate btn grey my-1 lighten-4 waves-effect black-text waves-light">Earnings</button>
+            </div>
+            <div class="col s12 m4">
+              <button id="summary-btn"
+                class="truncate btn grey my-1 lighten-4 waves-effect black-text waves-light">Summary</button>
+            </div>
+            <div class="col s12 m4">
+              <button id="top-highlights-btn"
+                class="truncate btn grey my-1 lighten-4 waves-effect black-text waves-light">Top Highlights</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card balance-stat-div">
+          <div class="">
+            <h6 class="valign-wrapper uppercase p-3 font-weight-medium">
+              <i class="material-icons blue-text">star</i>
+              <span class="ml-3">you are in the top 1.8% of all creators!</span>
+            </h6>
+            <div class="card">
+              <!-- <div class="row px-3">
+                <div class="col s12 m6 current-balance-div">
+                  <h4 class="font-weight-bold">$676.64</h4>
+                  <h6 class="">Current balance</h6>
+                </div>
+                <div class="col s12 m6 pending-balance-div teal-text">
+                  <h4 class="font-weight-bold right-align">$2,502.22</h4>
+                  <h6 class="valign-wrapper" style="display: flex;">Pending balance
+                    <i class="material-icons px-3" id="info-btn">info</i>
+                  </h6>
+                </div>
+              </div> -->
+
+              <div class="row px-3">
+                <div class="col s6 m6 px-3">
+                  <h4 class="font-weight-bold">$676.64</h4>
+                  <p class="font-weight-semibold">Current balance</p>
+                </div>
+                <div class="col s6 m6 px-3">
+                  <h4 class="right-align font-weight-bold grey-text">$2,502.22</h4>
+                  <h6 class="right right-align font-weight-semibold grey-text"
+                    style="display: flex;align-items: center;">
+                    Pending balance
+                    <i class="material-icons pl-2" id="info-btn">info</i>
+                  </h6>
+
+                </div>
+              </div>
+
+
+
+              <div class="card-action">
+                <div class="row">
+                  <div class="col s12 px-0">
+                    <select class="border-none fs-2 font-weight-bold">
+                      <option disabled selected value="manual-payouts">Manual Payouts</option>
+                      <option value="automatic-payouts">Automatic Payouts</option>
+                      <option value="payment-issues">Payment Issues</option>
+                      <option value="billing-questions">Billing Questions</option>
+                    </select>
+                  </div>
+                  <div class="col s12 px-0 m6 payout-dropdown">
+                    <span class="grey-text">Minimum withdrawal amount is $50</span>
+                  </div>
+                  <button class="btn light-blue darken-1 rounded right mt-3" id="request-withdrawal-btn uppercase">request
+                    withdrawal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card sticky-div pt-0 mt-0">
+          <div class="row px-3 py-3">
+            <div class="col s12">
+              <select class="border-none fs-2 font-weight-bold">
+                <option class=" black-text" value="24-hours">Last 24 hours</option>
+                <option value="7-days">Last 7 days</option>
+                <option selected value="30-days">Last 30 days</option>
+                <option value="90-days">Last 90 days</option>
+                <option value="180-days">Last 180 days</option>
+                <option value="365-days">Last 365 days</option>
+              </select>
+            </div>
+            <div class="mb-3 col s12 payout-dropdown">
+              <span class="grey-text">Aug 15,2023 Sep 14,2023 (local time UTC+06.00)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row px-3 py-3 mb-0">
+            <div class="col s6 m6 current-balance-div">
+              <h6 class="font-weight-bold">All time</h6>
+            </div>
+            <div class="col s6 m6 pending-balance-div right-align">
+              <h6 class="font-weight-bold">$39,257.86</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row px-3 py-3">
+            <div class="col s6 m6 current-balance-div">
+              <h6 class="font-weight-bold">Aug 15 2023 - Sep 14,2023</h6>
+            </div>
+            <div class="col s6 m6 pending-balance-div">
+              <h6 class="right-align font-weight-bold">$6,942.65</h6>
+            </div>
+          </div>
+          <div class="p-3 chart-by-date">
+            <canvas id="chart-by-date-canvas"></canvas>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="px-3">
+            <table>
+              <thead>
+                <tr>
+                  <th class="grey-text">Earnings</th>
+                  <th class="grey-text">Gross</th>
+                  <th class="right-align grey-text">Net</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span class="font-weight-semibold" style="color: black;">Subscriptions</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span style="color: black;">Tips</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span style="color: black;">Posts</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span style="color: black;">Messages</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span style="color: black;">Referals</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <label>
+                        <input type="radio" class="with-gap" name="group1" />
+                        <span style="color: black;">Streams</span>
+                      </label>
+                    </p>
+
+                  </td>
+                  <td class="font-weight-semibold grey-text">$8,678.85</td>
+                  <td class="right-align">$6,942.65</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+
+          <div class="px-3">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="font-weight-medium">September, 2023</td>
+                  <td></td>
+                  <th class="right-align font-weight-medium">$3,400.87</th>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">August, 2023</td>
+                  <td></td>
+                  <th class="right-align font-weight-medium">$3,400.87</th>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">July, 2023</td>
+                  <td></td>
+                  <th class="right-align font-weight-medium">$3,400.87</th>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">June, 2023</td>
+                  <td></td>
+                  <th class="right-align font-weight-medium">$3,400.87</th>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">May, 2023</td>
+                  <td></td>
+                  <th class="right-align font-weight-medium">$3,400.87</th>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">April, 2023</td>
+                  <td></td>
+                  <td class="right-align font-weight-medium">$3,400.87</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-medium">March, 2023</td>
+                  <td></td>
+                  <td class="right-align font-weight-medium">$3,400.87</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div id="engagement-wrapper" class="tab-cont-wrapper px-3 cyan lighten-5" style="height: 5000px;">
+        
+      </div>
+
+      <div class="footer-nav z-depth-4">
+        <div class="py-3 container">
+          <button class="btn-flat"><img src="icon/home.svg" alt="" class="m-auto" width="25px" /></button>
+          <button class="btn-flat"><img src="icon/notification.svg" alt="" class="m-auto" width="25px" /></button>
+          <button class="btn-flat"><img src="icon/plus.svg" alt="" class="m-auto" width="25px" /></button>
+          <button class="btn-flat"><img src="icon/messege.svg" alt="" class="m-auto" width="25px" /></button>
+          <button class="profile-btn btn-flat"><img src="icon/profile.png" alt="" width="25px"
+              class="circle" /></button>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/chart-setup.js"></script>
+
+</html>
