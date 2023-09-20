@@ -80,7 +80,7 @@ li.tab {
   color: #000;
 }
 .tabs .tab a.active {
-  background-color: #88888870;
+  background-color: none;
   color: #000;
 }
 .tabs .indicator {
