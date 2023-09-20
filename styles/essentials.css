@@ -340,6 +340,8 @@
 
 .ml-2 {
     margin-left: 0.5rem !important;
+    font-size: smaller;
+    font-weight: 700;
 }
 
 .ml-3 {
